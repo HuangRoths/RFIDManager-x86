@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="580.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PageNotHaveCard">
+
+    <TableView fx:id="table" layoutY="178.0" prefHeight="600.0" prefWidth="1800.0" HBox.hgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="AssetNum" prefWidth="91.00000154972076" text="资产编号" />
+            <TableColumn fx:id="EPCCode" prefWidth="350.39998626708984" text="EPC编号" />
+            <TableColumn fx:id="AssetName" prefWidth="163.19998168945312" text="资产名称" />
+            <TableColumn fx:id="AssetType" prefWidth="60.40005493164062" text="资产分类" />
+            <TableColumn fx:id="Department" prefWidth="151.20001220703125" text="使用部门名称" />
+            <TableColumn fx:id="DepartmentId" prefWidth="80.0" text="使用部门编号" />
+            <TableColumn fx:id="LiablePerson" prefWidth="130.800048828125" text="使用人名称" />
+            <TableColumn fx:id="LiablePersonId" prefWidth="70.4000244140625" text="使用人编号" />
+            <TableColumn fx:id="AdminEmployeeName" prefWidth="130.800048828125" text="管理人名称" />
+            <TableColumn fx:id="AdminEmployeeId" prefWidth="70.4000244140625" text="管理人编号" />
+            <TableColumn fx:id="StorageLocationName" prefWidth="130.800048828125" text="存放地名称" />
+            <TableColumn fx:id="StorageLocationId" prefWidth="70.4000244140625" text="存放地编号" />
+            <TableColumn fx:id="MakeCard" prefWidth="90.20001220703125" text="发卡" />
+        </columns>
+    </TableView>
+   <Label layoutX="14.0" layoutY="79.0" text="数据筛选">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="14.0" layoutY="128.0" text="使用部门编号">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="depID" layoutX="115.0" layoutY="128.0" prefHeight="23.0" prefWidth="64.0" />
+   <Label layoutX="192.0" layoutY="128.0" text="资产编号">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="AssetNumber" layoutX="260.0" layoutY="128.0" prefHeight="23.0" prefWidth="119.0" />
+   <Label layoutX="398.0" layoutY="127.0" text="页码">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="pageIndex" layoutX="437.0" layoutY="128.0" prefHeight="23.0" prefWidth="45.0" />
+   <Label layoutX="501.0" layoutY="127.0" text="每页数目">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="pageSize" layoutX="569.0" layoutY="128.0" prefHeight="23.0" prefWidth="46.0" />
+   <Label layoutX="635.0" layoutY="128.0" text="使用人编号">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="userID" layoutX="722.0" layoutY="129.0" prefHeight="23.0" prefWidth="64.0" />
+   <Label layoutX="808.0" layoutY="128.0" text="管理人编号">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="adminID" layoutX="892.0" layoutY="129.0" prefHeight="23.0" prefWidth="64.0" />
+   <Label layoutX="985.0" layoutY="128.0" text="存放地点编号">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="locationID" layoutX="1087.0" layoutY="128.0" prefHeight="23.0" prefWidth="64.0" />
+   <Button fx:id="queryNotCardBtn" layoutX="1212.0" layoutY="122.0" mnemonicParsing="false" onAction="#queryNotCard" prefHeight="34.0" prefWidth="80.0" text="查询">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+
+</AnchorPane>
